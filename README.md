@@ -149,6 +149,6 @@ Both team members spent approximately equal time on product thinking and enginee
 ---
 
 ## Documents
-- [Product Document](docs/product-doc.md)
-- [Technical Document](docs/technical-doc.md)
-- [Decision Log](docs/decision-log.md)
+[Product Document](product-doc.md)
+[Technical Document](technical-doc.md)
+[Decision Log](decision-log.md)
