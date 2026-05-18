@@ -1,6 +1,6 @@
 # ShopMind — Technical Document
 **Kasparro Hackathon 2026 | Track 1: AI Shopping Agent**
-**Team:** [Your Name 1] & [Your Name 2] | KIIT University, CSE
+**Team:** Adya Pathak & Rupali Pasa | KIIT University, CSE
 
 ---
 
