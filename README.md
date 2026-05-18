@@ -116,16 +116,9 @@ shopmind-agent/
 ---
 
 ## Screenshots
-## Screenshots
-
-### Gift Finder — Fitness products for dad
-![Fitness Gift](screenshots/Screenshot 2026-05-18 150735.png)
-
-### Formal Shoes — Office environment
-![Formal Shoes](screenshots/Screenshot 2026-05-18 151317.png)
-
-### Camping Gear — Remote cold area
-![Camping Gear](screenshots/Screenshot 2026-05-18 151352.png)
+![Fitness Gift](Screenshot%202026-05-18%20150735.png)
+![Formal Shoes](Screenshot%202026-05-18%20151317.png)
+![Camping Gear](Screenshot%202026-05-18%20151352.png)
 
 ---
 
