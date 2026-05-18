@@ -116,7 +116,16 @@ shopmind-agent/
 ---
 
 ## Screenshots
-_(Add screenshots of the chat interface here)_
+## Screenshots
+
+### Gift Finder — Fitness products for dad
+![Fitness Gift](screenshots/Screenshot 2026-05-18 150735.png)
+
+### Formal Shoes — Office environment
+![Formal Shoes](screenshots/Screenshot 2026-05-18 151317.png)
+
+### Camping Gear — Remote cold area
+![Camping Gear](screenshots/Screenshot 2026-05-18 151352.png)
 
 ---
 
