@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShopMind — AI Shopping Agent
+**Kasparro Hackathon 2026 | Track 1**
 
-## Getting Started
+> ShopMind replaces the browse-search-filter-compare loop with a single intelligent conversation. Tell it what you need. It asks smart questions. It recommends the right product with clear reasoning.
 
-First, run the development server:
+---
 
+## Demo Video
+🎥 [Watch Demo](YOUR_YOUTUBE_LINK_HERE)
+
+---
+
+## Problem
+Online shopping forces users through a painful loop: search → browse → filter → compare → still feel uncertain. Most users don't know exactly what to search for — they know what they need. ShopMind bridges that gap with conversation.
+
+## Solution
+A conversational AI shopping agent that:
+- Understands natural language intent ("I need a gift for my dad who exercises")
+- Asks smart clarifying questions (budget, occasion, preferences)
+- Fetches relevant products from Shopify
+- Recommends 2-3 options with explicit tradeoffs
+- Explains why it recommends what it recommends
+
+---
+
+## Tech Stack
+- **Frontend:** Next.js 16 + React + Tailwind CSS
+- **Backend:** Next.js API Routes (server-side)
+- **AI:** Google Gemini 2.5 Flash
+- **Products:** Shopify Admin API (GraphQL)
+- **Language:** TypeScript
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+- Node.js v18+
+- A Shopify Partner account with a development store
+- A Google AI Studio account (free)
+
+### 1. Clone the repo
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/adyapathak22/shopmind-agent
+cd shopmind-agent
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Set up environment variables
+Create a `.env.local` file in the root directory:
+```
+GEMINI_API_KEY=your_gemini_api_key_from_aistudio.google.com
+SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
+SHOPIFY_ADMIN_TOKEN=your_shopify_admin_api_token
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Getting your Gemini API key:**
+1. Go to [aistudio.google.com](https://aistudio.google.com)
+2. Click "Get API Key" → "Create API key"
+3. Copy the key
 
-## Learn More
+**Getting your Shopify Admin token:**
+1. Go to your Shopify dev store admin
+2. Settings → Apps and sales channels → Develop apps
+3. Create an app → Configure Admin API scopes → enable `read_products`
+4. Install app → API credentials → copy Admin API access token
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Run the development server
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Open in browser
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## How to Use
+1. Type what you're looking for in plain language
+2. Answer the agent's clarifying questions
+3. Review the recommendations and tradeoffs
+4. Ask follow-up questions if needed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Example queries:**
+- "I need shoes for a formal office environment"
+- "Help me find a gift for someone who loves fitness, budget around $50"
+- "I need something warm for winter, I'm going camping"
+- "Show me something stylish but comfortable for everyday use"
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Repository Structure
+```
+shopmind-agent/
+├── app/
+│   ├── api/
+│   │   ├── chat/route.ts       # AI conversation endpoint (Gemini)
+│   │   └── products/route.ts   # Shopify product fetcher
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx                # Main chat UI
+├── docs/
+│   ├── product-doc.md          # Product thinking & decisions
+│   ├── technical-doc.md        # Architecture & implementation
+│   └── decision-log.md         # Running log of key decisions
+├── .gitignore
+├── next.config.ts
+├── package.json
+└── README.md
+```
+
+---
+
+## Screenshots
+_(Add screenshots of the chat interface here)_
+
+---
+
+## Contribution Note
+
+**Team:** Adya Pathak & Rupali Pasa | KIIT University, CSE Branch
+
+This was a collaborative build where both team members contributed equally across product thinking and engineering.
+
+**Adya Pathak:**
+- Frontend development (chat UI, message rendering, UX design)
+- AI layer integration (Gemini API, conversation prompt engineering)
+- Product document and Technical document
+- Demo video narration
+
+**Rupali Pasa:**
+- Backend development (Next.js API routes)
+- Shopify Admin API integration (GraphQL queries, product fetching)
+- Architecture design and  user journey design
+- Decision log and scope decisions
+
+**Joint contributions:**
+- Product concept and problem framing
+- Conversation flow design
+- Testing and debugging
+- README and submission preparation
+
+Both team members spent approximately equal time on product thinking and engineering work throughout the hackathon.
+
+---
+
+## Documents
+- [Product Document](docs/product-doc.md)
+- [Technical Document](docs/technical-doc.md)
+- [Decision Log](docs/decision-log.md)
