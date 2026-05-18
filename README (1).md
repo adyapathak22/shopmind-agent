@@ -122,20 +122,20 @@ _(Add screenshots of the chat interface here)_
 
 ## Contribution Note
 
-**Team:** [Your Name 1] & [Your Name 2] | KIIT University, CSE Branch
+**Team:** Adya Pathak & Rupali Pasa | KIIT University, CSE Branch
 
 This was a collaborative build where both team members contributed equally across product thinking and engineering.
 
-**[Your Name 1]:**
+**Adya Pathak:**
 - Frontend development (chat UI, message rendering, UX design)
 - AI layer integration (Gemini API, conversation prompt engineering)
-- Product document and user journey design
+- Product document and Technical document
 - Demo video narration
 
-**[Your Name 2]:**
+**Rupali Pasa:**
 - Backend development (Next.js API routes)
 - Shopify Admin API integration (GraphQL queries, product fetching)
-- Technical document and architecture design
+- Architecture design and  user journey design
 - Decision log and scope decisions
 
 **Joint contributions:**
